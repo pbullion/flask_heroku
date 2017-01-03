@@ -6,4 +6,9 @@
 
 
 {% block main %}
+<ul>
+{% for result in result_list %}
+    <li>{{result.name}}</li>
+{% endfor %}
+</ul>
 {% endblock %}
