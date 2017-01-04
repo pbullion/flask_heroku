@@ -19,6 +19,10 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'this_should_be_configured')
 
+DBUSER=os.environ.get('DBUSER', True)
+DBPASS=os.environ.get('DBPASS', True)
+DBHOST=os.environ.get('DBHOST', True)
+DBNAME=os.environ.get('DBNAME', True)
 
 ###
 # Routing for your application.
@@ -27,7 +31,7 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'this_should_be_configur
 @app.route('/')
 def home():
     """Render website's home page."""
-    db=pg.DB(host="ec2-54-243-187-133.compute-1.amazonaws.com", user="iblttfewmrtonj", passwd="9873e3a85126580a0ee7a2c5e8ca77f2d8adae7935233c352547f234076a9aec", dbname="d2r15h80i2nam0")
+    db=pg.DB(host=DBHOST, user=DBUSER, passwd=DBPASS, dbname=DBNAME)
     query=db.query("select * from album")
     result_list = query.namedresult()
     return render_template('home.html',result_list=result_list)
