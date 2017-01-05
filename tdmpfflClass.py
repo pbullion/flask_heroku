@@ -1,9 +1,9 @@
-import json
-import pycurl
-import StringIO
-import urllib
-import mysql.connector
-import sys
+# import json
+# import pycurl
+# import StringIO
+# import urllib
+# import mysql.connector
+# import sys
 import pg
 import os
 
