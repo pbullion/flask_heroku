@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block customstyle %}
+<link rel="stylesheet" href="/static/css/chickenbowl.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="container-fluid">
+        <div class="col-xs-12" id="chickenbowlheader">
+            <h1>{{ title }}</h1>
+        </div>
+        <div class="col-xs-12 col-sm-6" id="chickenbowlpic">
+            <img id="chickenbowlpicdoug" src="/static/images/chickenbowl/dougspraytan.jpeg" alt="doug spray tan">
+            <h1>Charles Sartin III</h1>
+            <h2>2015</h2>
+            <h4>"darkest spray tan possible"</h4>
+        </div>
+        <div class="col-xs-12 col-sm-6" id="chickenbowlpic">
+            <img id="chickenbowlpiccody" src="/static/images/chickenbowl/codywoman.jpeg" alt="cody dressed in drag">
+            <h1>Cody Guidry</h1>
+            <h2>2014</h2>
+            <h4>"drag on 6th street"</h4>
+
+        </div>
+
+    </div>
+
+{% endblock %}
+
+

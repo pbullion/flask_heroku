@@ -1,14 +1,18 @@
-{% extends "base.html" %}
+{% extends "layout.html" %}
+{% block customstyle %}
+    <link rel="stylesheet" href="/static/css/home.css">
+{% endblock %}
+
+{% block body %}
+<div id="bodypadding"></div>
+    <h1>TOUCHDOWN MY PANTS</br>FANTASY FOOTBALL LEAGUE</h1>
+
+    <img src="/static/images/TDMPFFLwhite.png">
 
 
-{% block js %}
+</div>
+
+
 {% endblock %}
 
 
-{% block main %}
-<ul>
-{% for result in result_list %}
-    <li>{{result.name}}</li>
-{% endfor %}
-</ul>
-{% endblock %}

@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+
+#history {
+    text-align: center;
+    color: white;
+}
+
+#history h1 {
+    font-size: 60px;
+    font-style: bold;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    font-family: 'Candal', sans-serif;
+
+}
+
+#history p {
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+    line-height: normal;
+}
+
+
+.clearfix() {
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}

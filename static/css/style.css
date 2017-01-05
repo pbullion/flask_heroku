@@ -1,0 +1,113 @@
+body {
+    background-color: white;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+
+.clearfix() {
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+/******This is for if i want it to collapse sooner*/
+
+@media (max-width: 830px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+  .mycollapse   {
+      text-align:center;
+      border-right: 0px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+}
+
+
+#navLogo    {
+    height: 34px;
+    width: 44px;
+    margin-top: 0px;
+}
+
+#navLogoPadding {
+        padding-top: 7px !important;
+
+}
+#navName    {
+    color: white;
+    font-size: 30px;
+    font-family: 'Paytone One', sans-serif;
+    padding-top: 2px;
+    margin-right: 10px;
+}
+
+.navbar {
+    text-transform: uppercase;
+    background-color: green !important;
+}
+
+.navbar li a {
+    color: white !important;
+    border-right: 2px solid white;
+    padding: 0px 11px!important;
+    font-size: 12px;
+    /*remove the 15px top padding from the a and move to li*/
+}
+
+.navbar li {
+    padding: 15px 5px 0px 0px;
+    /*pad the li and not the a to shrink the border*/
+}
+
+.navbar-default {
+    border: 0px;
+}
+
+.nameheader {
+    color: black;
+    margin-top: 8px;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 30px;
+}
+
+
+
+

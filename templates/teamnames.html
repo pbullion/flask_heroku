@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block customstyle %}
+<link rel="stylesheet" href="/static/css/owners.css">
+{% endblock %}
+
+{% block body_top %}
+
+<h1>{{title}}</h1>
+
+{% endblock %}
+
+{% block body %}
+
+<ul>
+
+    {% for team in team_names %}
+
+    <li>{{ team.teamname }}&nbsp;&nbsp;{{ team.yearstarted }}&nbsp;-&nbsp;{{ team.yearended }}
+
+    </li>
+
+    {% endfor %}
+
+</ul>
+
+{% endblock %}
+
+

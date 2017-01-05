@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block customstyle %}
+<link rel="stylesheet" href="/static/css/owners.css">
+{% endblock %}
+
+{% block body_top %}
+
+<h1>{{title}}</h1>
+
+{% endblock %}
+
+{% block body %}
+
+<ul>
+
+    {% for owner in result_list %}
+
+    <li>{{ owner.year }}&nbsp;&nbsp;{{ owner.wins }}&nbsp;-&nbsp;{{ owner.loss }}
+
+    </li>
+
+    {% endfor %}
+
+</ul>
+
+{% endblock %}
+
+

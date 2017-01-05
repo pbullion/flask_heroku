@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block customstyle %}
+<link rel="stylesheet" href="/static/css/standings.css">
+{% endblock %}
+
+{% block body_top %}
+    <h1>{{ title }}</h1>
+{%  endblock %}
+
+{% block body %}
+
+    <ul class="list-group>"
+
+{% for entry in standings %}
+    <li class="list-group-item">{{entry.teamname}}&nbsp;&nbsp;{{entry.wins}}&nbsp;-&nbsp;{{entry.losses}}
+
+
+
+
+{% endfor %}
+</ul>
+
+
+
+{% endblock %}
+
+

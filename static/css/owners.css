@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    padding-top: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.clearfix() {
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+h1  {
+    font-family: 'Paytone One', sans-serif;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+li  {
+    color: white;
+    font-size: 25px;
+    list-style: none;
+}
+
